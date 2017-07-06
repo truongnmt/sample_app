@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem "rails", "~> 5.0.4"
+gem "sqlite3"
 gem "puma", "~> 3.0"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
@@ -16,7 +17,9 @@ gem "jbuilder", "~> 2.5"
 
 group :development do
   gem "byebug", platform: :mri
-  gem "sqlite3"
+end
+
+group :development do
   gem "web-console", ">= 3.3.0"
   gem "listen", "~> 3.0.5"
   gem "spring"
@@ -45,10 +48,6 @@ group :test do
   gem "scss_lint_reporter_checkstyle", require: false
   gem "shoulda-matchers", "~> 3.0"
   gem "simplecov", require: false
-end
-
-group :production do
-  gem "pg", "0.18.4"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
