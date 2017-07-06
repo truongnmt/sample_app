@@ -7,7 +7,7 @@ test:
   brakeman:
     command: brakeman -o .framgia-ci-reports/brakeman.html -o .framgia-ci-reports/brakeman.json
   reek:
-    command: reek --format html > .framgia-ci-reports/reek.html
+    command: reek --config .reek --format html > .framgia-ci-reports/reek.html
   rubocop:
     command: bundle exec rubocop --require rubocop/formatter/checkstyle_formatter --format RuboCop::Formatter::CheckstyleFormatter --no-color --rails --out .framgia-ci-reports/rubocop.xml app/ lib/
   scss-lint:
