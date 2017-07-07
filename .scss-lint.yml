@@ -3,3 +3,7 @@ exclude:
   - 'app/assets/stylesheets/application.scss'
   - 'vendor/assets/**'
   - '*.css'
+linters:
+  StringQuotes:
+    enabled: true
+    style: double_quotes

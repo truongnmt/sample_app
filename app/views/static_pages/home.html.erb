@@ -6,4 +6,10 @@
     <%= link_to t("rails_tutorial"), "http://www.railstutorial.org/" %>
     <%= t ".rails_app_title" %>
   </h2>
+
+  <%= link_to t("static_pages.home.sign_up"), signup_path,
+    class: "btn btn-lg btn-primary" %>
 </div>
+
+<%= link_to image_tag("rails.png", alt: t("static_pages.home.img-alt")),
+  "http://rubyonrails.org/" %>
