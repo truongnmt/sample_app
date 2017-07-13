@@ -1,9 +1,14 @@
 scss_files: 'app/assets/stylesheets/**'
 exclude:
-  - 'app/assets/stylesheets/application.scss'
-  - 'vendor/assets/**'
-  - '*.css'
+  - "app/assets/stylesheets/application.scss"
+  - "vendor/assets/**"
+  - "*.css"
 linters:
   StringQuotes:
     enabled: true
     style: double_quotes
+  SelectorFormat:
+    ignored_names:
+      - "debug_dump"
+      - "field_with_errors"
+      - "error_explanation"

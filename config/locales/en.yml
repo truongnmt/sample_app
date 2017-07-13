@@ -35,6 +35,7 @@ en:
   form_contain: "The form contain"
   error: "error"
   welcome_to_app: "Welcome to sample app"
+  not_exist_user: "User not found."
   create_my_account: "Create my account"
   confirmation: "Confirmation"
   new_user: "New user?"
