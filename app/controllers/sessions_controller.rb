@@ -5,16 +5,27 @@ class SessionsController < ApplicationController
     session = params[:session]
     user = User.find_by email: session[:email].downcase
     if user && user.authenticate(session[:password])
-      log_in user
-      redirect_to user
+      handle_valid_login user, session
     else
-      flash.now[:danger] = t "error_login_message"
-      render :new
+      handle_invalid_login
     end
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
+  end
+
+  private
+
+  def handle_valid_login user, session
+    log_in user
+    session[:remember_me] == "1" ? remember(user) : forget(user)
+    redirect_to user
+  end
+
+  def handle_invalid_login
+    flash.now[:danger] = t "error_login_message"
+    render :new
   end
 end
