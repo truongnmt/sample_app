@@ -77,3 +77,9 @@ en:
     new:
       sign_up: "Sign Up"
       sentence_1: "This will be a signup page for new users."
+  sessions:
+    new:
+      remember_me: "Remember me on this computer"
+      forgot_password: "Forgot Password"
+    create:
+      check_email: "Account not activated. Check your email for the activation link."
