@@ -20,7 +20,6 @@ input {
 }
 
 // miscellaneous
-//
 .debug_dump {
   @include box-sizing;
   clear: both;
@@ -30,7 +29,6 @@ input {
 }
 
 // universal
-//
 body {
   padding-top: 60px;
 }
@@ -52,7 +50,6 @@ textarea {
 }
 
 // typography
-//
 h1,
 h2,
 h3,
@@ -84,7 +81,6 @@ p {
 }
 
 // header
-//
 .logo-nav {
   color: $white;
   float: left;
@@ -102,7 +98,6 @@ p {
 }
 
 // footer
-//
 footer {
   border-top: 1px solid $gray-border;
   color: $gray2;
@@ -134,7 +129,6 @@ footer {
 }
 
 // sidebar
-//
 aside {
   .user-info {
     margin-top: 20px;
@@ -175,7 +169,6 @@ aside {
 }
 
 // forms
-//
 input,
 textarea,
 select,
@@ -220,4 +213,16 @@ select,
 .session-remember-me {
   margin-left: 0;
   width: auto;
+}
+
+// Users index
+.users {
+  list-style: none;
+  margin: 0;
+
+  li {
+    border-bottom: 1px solid $gray-lighter;
+    overflow: auto;
+    padding: 10px 0;
+  }
 }

@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
   def handle_valid_login user, session
     log_in user
     session[:remember_me] == "1" ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
   end
 
   def handle_invalid_login
