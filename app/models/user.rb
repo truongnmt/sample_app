@@ -28,6 +28,10 @@ class User < ApplicationRecord
     end
   end
 
+  def current_user? user
+    self == user
+  end
+
   def remember
     self.remember_token = User.new_token
     update_attributes remember_digest: User.digest(remember_token)

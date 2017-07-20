@@ -74,9 +74,25 @@ en:
       rails_app_title: "sample application."
       img-alt: "Rails logo"
   users:
+    please_log_in: "Please Log in"
     new:
       sign_up: "Sign Up"
       sentence_1: "This will be a signup page for new users."
+    index:
+      all_users: "All users"
+    edit:
+      edit_user: "Edit User"
+      update_your_profile: "Update Your Profile"
+      confirmation: "Confirmation"
+      save_changes: "Save Changes"
+      change: "change"
+    update:
+      updated: "Profile updated"
+    destroy:
+      user_deleted: "User deleted"
+    user:
+      delete: "delete"
+      you_sure: "You sure"
   sessions:
     new:
       remember_me: "Remember me on this computer"
