@@ -46,6 +46,7 @@ en:
   setting: "Setting"
   account: "Account"
   delete: "Delete"
+  comma: ","
   static_pages:
     about:
       title: "About"
@@ -80,6 +81,8 @@ en:
       sentence_1: "This will be a signup page for new users."
     index:
       all_users: "All users"
+    create:
+      check_email: "Please check your email to activate your account."
     edit:
       edit_user: "Edit User"
       update_your_profile: "Update Your Profile"
@@ -99,3 +102,13 @@ en:
       forgot_password: "Forgot Password"
     create:
       check_email: "Account not activated. Check your email for the activation link."
+    edit:
+      account_activated: "Account activated!"
+      invalid_activation_link: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      title: "Account Activation"
+      hi: "Hi %{user_name},"
+    password_reset:
+      hi: "Hi %{user_name},"
+      password_reset: "Password Reset"
