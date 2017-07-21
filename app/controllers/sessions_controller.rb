@@ -19,9 +19,23 @@ class SessionsController < ApplicationController
   private
 
   def handle_valid_login user, session
+    if user.activated?
+      handle_activated_user user, session
+    else
+      handle_unactivated_user
+    end
+  end
+
+  def handle_activated_user user, session
     log_in user
     session[:remember_me] == "1" ? remember(user) : forget(user)
     redirect_back_or user
+  end
+
+  def handle_unactivated_user
+    message = t ".create.check_email"
+    flash[:warning] = message
+    redirect_to root_url
   end
 
   def handle_invalid_login
