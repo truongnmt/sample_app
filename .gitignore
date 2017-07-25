@@ -33,3 +33,11 @@ config/environments/*.local.yml
 .framgia-ci-result.temp.yml
 /config/rails_best_practices.yml
 /.fuse_hidden*
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+
+config/settings/*.yml
+public/javascripts/i18n.js
+public/javascripts/translations.js

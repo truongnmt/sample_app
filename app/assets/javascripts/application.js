@@ -14,4 +14,20 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
+//= require jquery.timeago.js
+//= require i18n
+//= require i18n.js
+//= require i18n/translations
 //= require_tree .
+
+$(document).ready(function (){
+  $('#micropost_picture').bind('change', function() {
+    console.log('123');
+    var size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 5) {
+      alert(I18n.t('alert'));
+    }
+  });
+
+  $(".timeago").timeago();
+});
