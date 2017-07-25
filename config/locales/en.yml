@@ -47,6 +47,8 @@ en:
   account: "Account"
   delete: "Delete"
   comma: ","
+  should_be_less_than_5mb: "Should be less than 5MB"
+  alert: "Maximum file size is 5MB. Please choose a smaller file."
   static_pages:
     about:
       title: "About"
@@ -74,6 +76,7 @@ en:
       home_page_show: "This is the home page for"
       rails_app_title: "sample application."
       img-alt: "Rails logo"
+      micropost_feed: "Micropost Feed"
   users:
     please_log_in: "Please Log in"
     new:
@@ -81,6 +84,8 @@ en:
       sentence_1: "This will be a signup page for new users."
     index:
       all_users: "All users"
+    show:
+      microposts: "Microposts (%{micropost_count})"
     create:
       check_email: "Please check your email to activate your account."
     edit:
@@ -139,3 +144,20 @@ en:
       password_expired: "Password reset has expired."
     get_user:
       invalid_email: "Invalid Email"
+  microposts:
+    micropost:
+      posted: "Posted "
+      ago: " ago"
+      delete: "delete"
+      you_sure: "you sure"
+    create:
+      micropost_created: "Micropost Created"
+    destroy:
+      micropost_deleted: "Micropost deleted"
+  shared:
+    micropost_form:
+      compose_new_micropost: "Compose new micropost"
+      post: "post"
+    user_info:
+      view_my_profile: "View my profile"
+      micropost: "micropost"
