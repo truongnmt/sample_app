@@ -6,6 +6,8 @@ $white: #fff;
 $gray-border: #eaeaea;
 $gray3: #222;
 $gray4: #555;
+$gray: #808080;
+$blue: #0ff;
 $colorred: #f00;
 $uneditable-input: #bbb;
 $input-error-border: #a94442;
@@ -174,6 +176,46 @@ aside {
   margin-top: 15px;
 }
 
+.stats {
+  margin-top: 0;
+  overflow: auto;
+  padding: 0;
+
+  a {
+    border-left: 1px solid $gray-lighter;
+    color: $gray;
+    float: left;
+    padding: 0 10px;
+
+    &:first-child {
+      border: 0;
+      padding-left: 0;
+    }
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
+  strong {
+    display: block;
+  }
+}
+
+.user-avatars {
+  margin-top: 10px;
+  overflow: auto;
+
+  .gravatar {
+    margin: 1px;
+  }
+
+  a {
+    padding: 0;
+  }
+}
+
 // forms
 input,
 textarea,
@@ -230,6 +272,10 @@ select,
     border-bottom: 1px solid $gray-lighter;
     overflow: auto;
     padding: 10px 0;
+  }
+
+  &.follow {
+    padding: 0;
   }
 }
 
