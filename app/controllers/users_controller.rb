@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
-  attr_reader :user
+  attr_reader :user, :users
 
   def index
     @users = User.paginate page: params[:page]
@@ -26,7 +26,10 @@ class UsersController < ApplicationController
   end
 
   def show
+    active_relationships = current_user.active_relationships
     @microposts = user.microposts.order_desc.paginate page: params[:page]
+    @relationship_build = active_relationships.build
+    @relationship_destroy = active_relationships.find_by followed_id: user.id
   end
 
   def edit; end

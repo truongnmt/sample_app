@@ -10,4 +10,9 @@ class ApplicationController < ActionController::Base
     flash[:danger] = t "users.please_log_in"
     redirect_to login_url
   end
+
+  def render_not_found
+    render file: Rails.root.join("public", "404.html"),
+      status: 404
+  end
 end

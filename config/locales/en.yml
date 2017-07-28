@@ -49,6 +49,8 @@ en:
   comma: ","
   should_be_less_than_5mb: "Should be less than 5MB"
   alert: "Maximum file size is 5MB. Please choose a smaller file."
+  following: "following"
+  followers: "followers"
   static_pages:
     about:
       title: "About"
@@ -101,6 +103,17 @@ en:
     user:
       delete: "delete"
       you_sure: "You sure"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+    show_follow:
+      micropost: "Microposts: "
+      view_my_profile: "View my profile"
   sessions:
     new:
       remember_me: "Remember me on this computer"

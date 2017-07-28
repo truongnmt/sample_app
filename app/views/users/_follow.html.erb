@@ -1,0 +1,4 @@
+<%= form_for object[:relationship_build], remote: true do |f| %>
+  <div><%= hidden_field_tag :followed_id, object[:user].id %></div>
+  <%= f.submit t(".follow"), class: "btn btn-primary" %>
+<% end %>
